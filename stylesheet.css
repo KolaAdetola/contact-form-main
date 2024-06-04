@@ -1,5 +1,10 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 20px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #e8f5e9;
@@ -44,20 +49,54 @@ body {
 .radio-group {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
-
-.radio-group label {
-    margin-left: 5px;
+.heaven{
+    /* background-color:red; */
+    width: 310px;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 191, 191);
+    border-radius: 5px;
+    display: flex;
+    justify-content:start;
+    gap: 10px;
+    align-items: start;
+    /* padding-left: 100px; */
+    padding-top: 10px;
+    cursor: pointer;
 }
-
+.heven{
+    /* background-color:red; */
+    width: 310px;
+    height: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(194, 191, 191);
+    border-radius: 5px;
+    display: flex;
+    justify-content:start;
+    gap: 10px;
+    align-items: start;
+    /* padding-left: 100px; */
+    padding-top: 10px;
+    cursor: pointer;
+}
 .checkbox-group {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    display: flex;
+    justify-content:start;
+    gap: 5px;
+    align-items: start;
 }
 
-.checkbox-group label {
-    margin-left: 5px;
+.checkbox-group input {
+    align-items: start;
+    /* margin-left: 5px; */
+    cursor:pointer;
+    
 }
 
 button[type="submit"] {
@@ -85,14 +124,36 @@ button[type="submit"]:hover {
 #names input{
     width: 290px;
 }
+#last-name{
+    align-items:end;
+}
 
 .form-group input[type="email"],
 .form-group textarea {
-    width: 100%;
+    width: 700px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+#first-name:hover{
+    border-color: #004d40;
+}
+#last-name:hover{
+    border-color: #004d40;
+}
+#email:hover{
+    border-color: #004d40;
+}
+#general-enquiry:hover{
+    border-color: #004d40;
+}
+.heaven:hover{
+    border-color: #004d40;
+}
+.heven:hover{
+    border-color: #004d40;
+}
+
 .form-group input[type="text"]{
     width: 100%;
     padding: 10px;
