@@ -17,24 +17,24 @@ button.addEventListener('click', buttonClick);
 
 
 
-const myDiv = document.querySelector('.heaven');
+const myDiv = document.querySelector('.heven');
 myDiv.addEventListener('click', () => {
     myDiv.style.color = 'black';
     myDiv.style.backgroundColor = '#E0F7FA';
 });
-myDiv.addEventListener('mouseleave', () => {
-    myDiv.style.color = 'black';
-    myDiv.style.backgroundColor = '#E0F7FA';
-});
+// myDiv.addEventListener('mouseleave', () => {
+//     myDiv.style.color = 'black';
+//     myDiv.style.backgroundColor = '#E0F7FA';
+// });
 
 
-const myDic = document.querySelector('.heven');
+const myDic = document.querySelector('.heaven');
 myDic.addEventListener('click', () => {
     myDic.style.color = 'black';
     myDic.style.backgroundColor = '#E0F7FA';
 });
-myDic.addEventListener('mouseleave', () => {
-    myDic.style.color = 'black';
-    myDic.style.backgroundColor = '#E0F7FA';
-});
+// myDic.addEventListener('mouseleave', () => {
+//     myDic.style.color = 'black';
+//     myDic.style.backgroundColor = '#E0F7FA';
+// });
 
