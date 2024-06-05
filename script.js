@@ -12,9 +12,10 @@
         let error = false
         document.querySelector(".lastAlert").style.display = "none"
         document.querySelector(".nameAlert").style.display = "none"
-        document.querySelector(".lastAlert").style.display = "none"
-        document.querySelector(".lastAlert").style.display = "none"
-        document.querySelector(".lastAlert").style.display = "none"
+        document.querySelector(".eAlert").style.display = "none"
+        document.querySelector(".messageAlert").style.display = "none"
+        document.querySelector(".queryAlert").style.display = "none"
+        document.querySelector(".consentAlert").style.display = "none"
         if (!lastName) {        
             document.querySelector(".lastAlert").style.display = "block"
             error =true
