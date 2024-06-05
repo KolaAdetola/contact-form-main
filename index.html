@@ -11,43 +11,54 @@
 <body>
   <div id="error"></div>
   <section class="container">
-    <form class="contact-form">
+    <div class="success">
+      <svg class="tick" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 20 21"><path d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"/></svg>
+      <p>Message sent</p>
+    </div>
+    <form name="contact" class="contact-form" onsubmit="">
             <h2>Contact Us</h2>
             <div id="names">
               <div class="form-group">
                 <label for="first-name">First Name *</label>
                 <input type="text" id="first-name" name="first-name" placeholder="This field is required" >
+                <p class="alert nameAlert">This field is required</p>
               </div>
               <div class="form-group">
                 <label for="last-name">Last Name *</label>
                 <input type="text" id="last-name" name="last-name" placeholder="This field is required" >
+                <p class="alert lastAlert">This field is required</p>
               </div>
             </div>
             <div class="form-group">
                 <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" placeholder="This field is required" >
+                <input type="email" id="email" name="email" placeholder="This field is required"  >
+                <p class="alert eAlert">This field is required</p>
             </div>
             <div class="form-group">
                 <label for="query-type">Query Type *</label>
                 <div class="radio-group">
                   <div class="heven">
-                    <input class="rado"  type="radio" id="general-enquiry" name="query-type" value="general-enquiry" >
+                    <input class="rado"  type="radio" id="general-enquiry" name="queryType" value="general-enquiry"  >
                     <label for="general-enquiry">General Enquiry</label>  
+                    
                   </div>
                   <div class="heaven">
-                    <input class="radio" type="radio" id="support-request" name="query-type" value="support-request">
+                    <input class="radio" type="radio" id="support-request" name="queryType" value="support-request" >
                     <label for="support-request">Support Request</label>
                   </div>
                 </div>
+                <p class="alert queryAlert">This field is required</p>
             </div>
             <div class="form-group">
                 <label for="message">Message *</label>
                 <textarea id="message" name="message" rows="4" ></textarea>
+                <p class="alert messageAlert">This field is required</p>
             </div>
             <div class="form-group checkbox-group">
-                <input type="checkbox" id="consent" name="consent" >
+                <input type="checkbox"  name="consent" value="conent"  >
                 <label for="consent">I consent to being contacted by the team *</label>
-            </div>
+              </div>
+              <p class="alert consentAlert">This field is required</p>
             <button type="submit" class="button">Submit</button>
       </form>
   </section>
